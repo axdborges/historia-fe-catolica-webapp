@@ -27,6 +27,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 body {
 	line-height: 1;
+    width: 100vw;
 }
 ol, ul {
 	list-style: none;
@@ -35,9 +36,12 @@ ol, ul {
 :root {
     --dourado-claro: #FFD601;
     --dourado-escuro: #F4C501;
+    --dourado-fraco: #f3d32f;
+
     --azul-escuro: #000e59;
     --azul-medio-escuro: #001074;
     --azul-medio: #011289;
+    --azul-bg: #060a25;
     --vermelho-claro: #e20e00;
     --vermelho-sangue: #880b04;
 
@@ -47,7 +51,7 @@ ol, ul {
 }
 
 body {
-    background-color: var(--azul-escuro);
+    background-color: var(--azul-bg);
 }
 
 
