@@ -3,6 +3,7 @@ import "./styles.css";
 
 import Image from "next/image";
 import logo from "../../public/logo.png";
+import me from "../../public/Lorenzo.png";
 
 import DropdownMenu from "@/components/DropDown";
 
@@ -25,21 +26,35 @@ export default function Home() {
           </h1>
         </div>
         <div className="container-video">
-          {/* <video controls width="600" height="400" preload="metadata">
-            <source src="https://youtu.be/XYTthhnUWZ0" type="video/mp4" />
-            Seu navegador não suporta a tag de vídeo.
-          </video> */}
           <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/XYTthhnUWZ0"
+            className="main-video"
+            width="350px"
+            height="190px"
+            src="https://www.youtube.com/embed/6dE4LGxgL0Y"
             title="YouTube video player"
             // frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            // allowfullscreen="true"
+            // allowfullscreen
           ></iframe>
         </div>
       </main>
+      <section className="section-whoAmI">
+        <h2 className="title-whoAmI">
+          Quem é Lorenzo Lazzarotto:
+        </h2>
+        <div className="container-whoAmI">
+          <div className="description-whoAmI">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quis quos, praesentium nihil voluptatem ex. Maiores totam ipsam ut alias omnis reprehenderit, dolore doloremque voluptas eveniet tempora velit suscipit praesentium.
+            </p>
+          </div>
+          <div className="image-whoAmI">
+            <figure className="src-whoAmI">
+              <Image src={me} alt="Lorenzo Lazzarotto" className="src-whoAmI link"/>
+            </figure>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

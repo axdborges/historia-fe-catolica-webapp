@@ -2,6 +2,10 @@
     overflow-x: hidden;
 } */
 
+* {
+    overflow-x: hidden;
+ }
+
 .header-home {
     background-color: var(--dourado-fraco);
     height: 50px;
@@ -32,8 +36,8 @@
 
 .main-page {
     width: 100%;
-    height: 580px;
-    background-image: url(../../public/bg.png);
+    height: 520px;
+    background-image: url(../../public/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -53,23 +57,109 @@
 }
 
 .container-title {
-    height: 30%;
+    height: 50%;
     width: 100%;
 
-    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    /* padding-top: 80px; */
+
+    .main-title {
+        /* position: relative; */
+        /* bottom: -100px; */
+        padding: 0px 10px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 2px 3px 5px rgba(0,0,0,0.36);
+        
+    }
 }
 
-.main-title {
-    position: relative;
-    /* bottom: -100px; */
-    padding: 0px 10px;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    
-}
 
 .container-video {
-    height: 70%;
+    height: 50%;
     width: 100%;
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+    .main-video {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .main-video {
+        max-height: 160px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main-video {
+        width: 700px;
+        height: 400px;
+    }
+
+    .container-title {
+        height: 40%;
+    }
+
+    .container-video {
+        height: 60%;
+    }
+}
+
+.section-whoAmI {
+    height: 600px;
+    width: 100%;
+
+    color: white;
+
+    .title-whoAmI{
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+
+        width: 100%;
+        height: 100px;
+
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-whoAmI {
+        display: flex;
+
+        .description-whoAmI {
+            height: 100%;
+            width: 70%;
+        }
+
+        .image-whoAmI {
+            height: 100%;
+            width: 30%;
+
+            .src-whoAmI {
+                width: 100%;
+                height: 100%;
+            }
+
+            .link {
+                position: relative;
+                height: 200px;
+
+                top: -50px;
+                left: -10px;
+            }
+        }
+    }
+
 }

@@ -27,11 +27,11 @@
 
 .menu-itens {
     background-color: rgba(255, 255, 255, 0.96);
-    margin-bottom: -150px; 
-    margin-left: -150px;
-    /* position: relative; */
-    /* bottom: -50px;
-    left: -70px; */
+    /* margin-bottom: -150px; 
+    margin-left: -150px; */
+    /* position: absolute; */
+    /* bottom: -50px; */
+    /* left: -70px; */
     padding: 5px;
     width: 170px;
     height: 140px;
