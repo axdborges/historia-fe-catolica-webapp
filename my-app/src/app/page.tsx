@@ -43,15 +43,15 @@ export default function Home() {
           Quem é Lorenzo Lazzarotto:
         </h2>
         <div className="container-whoAmI">
-          <div className="description-whoAmI">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quis quos, praesentium nihil voluptatem ex. Maiores totam ipsam ut alias omnis reprehenderit, dolore doloremque voluptas eveniet tempora velit suscipit praesentium.
-            </p>
-          </div>
           <div className="image-whoAmI">
-            <figure className="src-whoAmI">
+            <figure className="src-whoAmI figure">
               <Image src={me} alt="Lorenzo Lazzarotto" className="src-whoAmI link"/>
             </figure>
+          </div>
+          <div className="description-whoAmI">
+            <p className="paragraph-whoAmI">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quis quos, praesentium nihil voluptatem ex. Maiores totam ipsam ut alias omnis reprehenderit, dolore doloremque voluptas eveniet tempora velit suscipit praesentium.
+            </p>
           </div>
         </div>
       </section>

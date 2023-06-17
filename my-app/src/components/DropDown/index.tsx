@@ -2,6 +2,20 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+  Button,
+  IconButton,
+} from "@chakra-ui/react";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 import "./styles.css";
 import menuDrop from "../../../public/menuDrop.svg";
 
@@ -14,7 +28,7 @@ const DropdownMenu = () => {
 
   return (
     <div className="menu">
-      <button
+      {/* <button
         className="drop-button"
         onClick={toggleDropdown}
       >
@@ -41,7 +55,24 @@ const DropdownMenu = () => {
             <hr />
           </li>
         </ul>
-      )}
+      )} */}
+      <Menu>
+        <MenuButton
+          as={IconButton}
+          // rightIcon={<ChevronDownIcon />}
+          icon={<GiHamburgerMenu className="iconMenu"/>}
+          background={"inherit"}
+          width={40}
+          height={40}
+          border={"none"}
+        >
+        </MenuButton>
+        <MenuList height={200}>
+          <MenuItem  height={"20%"} width={180}>Apoie este apostolado</MenuItem>
+          <MenuItem height={"20%"} width={180}>Meu Livro</MenuItem>
+          <MenuItem height={"20%"} width={180}>Redes sociais</MenuItem>
+        </MenuList>
+      </Menu>
     </div>
   );
 };
