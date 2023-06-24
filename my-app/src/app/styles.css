@@ -4,7 +4,9 @@
 
 * {
     overflow-x: hidden;
- }
+}
+
+/* Estilização do Header */
 
 .header-home {
     background-color: var(--dourado-fraco);
@@ -33,8 +35,16 @@
     font-size: 16px;
     min-width: 230px;
     margin-left: 5px;
+
+    .header-title {
+        height: 100%;
+        overflow-y: hidden;
+
+    }
     
 }
+
+/* Estilização do Main (Título principal e Vídeo) */
 
 .main-page {
     width: 100%;
@@ -82,7 +92,6 @@
     }
 }
 
-
 .container-video {
     height: 50%;
     width: 100%;
@@ -117,10 +126,12 @@
     }
 }
 
+/* Seção Quem sou eu */
+
 .section-whoAmI {
     height: 600px;
     width: 100%;
-
+    
     color: white;
 
     .title-whoAmI{
@@ -149,6 +160,7 @@
 
         margin: auto;
         width: 80%;
+        max-width: 800px;
         height: 460px;
         padding: 10px;
         border-radius: 20px;
@@ -191,4 +203,98 @@
         }
     }
 
+}
+
+/* Seção Apoie este apostolado */
+
+.section-endorse {
+    height: 700px;
+    width: 100%;
+
+    background-color: var(--branco-bg);
+    color: var(--azul-claro-bg);
+
+    .title-endorse {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+
+        max-width: 80%;
+        height: 100px;
+        /* padding: 0px 30px 0px 0px; */
+
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .container-endorse {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+        margin: auto;
+        width: 85%;
+        max-width: 800px;
+        height: 460px;
+        padding: 20px;
+        border-radius: 10px;
+
+        background-color: white;
+
+        .description-endorse {
+            height: 80%;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+
+            .paragraph-endorse {
+                max-height: 50%;
+                width: 100%;
+
+                line-height: 22px;
+            }
+        }
+
+        .cta-endorse {
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            
+            .cta-link {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+               
+            }
+
+            .button-endorse {
+                background-color: var(--dourado-escuro);
+                width: 100%;
+                height: 40px;
+                border-radius: 10px;
+                border: none;
+
+                font-weight: bold;
+                font-family: inherit;
+                font-size: 14px;
+                color: var(--azul-bg);
+
+                cursor: pointer;
+
+            }
+
+            .button-endorse:hover {
+                background-color: var(--dourado-fraco);
+            }
+        } 
+    }
 }

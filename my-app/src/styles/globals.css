@@ -25,7 +25,9 @@ time, mark, audio, video {
 	vertical-align: baseline;
     overflow-x: hidden;
 }
+
 /* HTML5 display-role reset for older browsers */
+
 body {
 	line-height: 1;
     width: 100vw;
@@ -34,23 +36,33 @@ body {
 ol, ul {
 	list-style: none;
 }
+a {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: inherit; 
+}
 
 :root {
-    --dourado-claro: #FFD601;
+    --dourado-fraco:  #f3d32f;
+    --dourado-claro:  #FFD601;
     --dourado-escuro: #F4C501;
-    --dourado-fraco: #f3d32f;
-
-    --azul-escuro: #000e59;
-    --azul-medio-escuro: #001074;
-    --azul-medio: #011289;
-    --azul-bg: #060a25;
-    --azul-claro-bg: #161a38;
-    --vermelho-claro: #e20e00;
-    --vermelho-sangue: #880b04;
 
     --azul-logo: #011289;
 
+    --azul-medio:        #011289;
+    --azul-medio-escuro: #001074;
+    --azul-escuro:       #000e59;
+    --azul-claro-bg:     #161a38;
+    --azul-bg:           #060a25;
+
+    --vermelho-claro:  #e20e00;
+    --vermelho-sangue: #880b04;
+
     --marrom-cruz: #411106;
+
+    --branco-bg: rgb(240,243,245);
 }
 
 body {
