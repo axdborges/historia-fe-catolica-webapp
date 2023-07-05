@@ -7,6 +7,7 @@ import logo from "../../public/logo.png";
 import me from "../../public/Lorenzo.png";
 
 import DropdownMenu from "@/components/DropDown";
+import IconsSection from "@/components/IconsSection";
 
 import dynamic from "next/dynamic";
 
@@ -92,6 +93,10 @@ export default function Home() {
             </Link>
           </div>
         </div>
+      </section>
+      <section className="section-links">
+        <h3 className="title-links">Todas as Redes Sociais:</h3>
+        <IconsSection/>
       </section>
     </>
   );
