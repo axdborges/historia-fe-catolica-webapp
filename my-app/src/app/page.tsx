@@ -8,10 +8,12 @@ import me from "../../public/Lorenzo.png";
 
 import DropdownMenu from "@/components/DropDown";
 import IconsSection from "@/components/IconsSection";
+import Year from "@/components/Year";
 
 import dynamic from "next/dynamic";
 
 export default function Home() {
+
   return (
     <>
       <header className="header-home">
@@ -62,7 +64,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section-endorse">
+      <section className="section-endorse" id="apostolado">
         <h2 className="title-endorse">Apoie este Apostolado!</h2>
         <div className="container-endorse">
           <div className="description-endorse">
@@ -94,10 +96,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section-links">
+      <section className="section-links" id="redes">
         <h3 className="title-links">Todas as Redes Sociais:</h3>
         <IconsSection/>
       </section>
+      <footer className="footer-home">
+        <p className="copy">
+          Copyright © História e Fé Católica <Year/> - Todos os direitos reservados.
+        </p>
+      </footer>
     </>
   );
 }

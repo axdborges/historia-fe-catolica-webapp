@@ -7,6 +7,18 @@
     margin-bottom: -5px;
 }
 
+@media screen and (min-width: 767px) {
+    .menu {
+        height: 100%;
+        width: 600px;
+        max-width: 80%;
+        padding-right: 10px;
+
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 .iconMenu {
     width: 22px;
     height: 22px;
@@ -43,4 +55,37 @@
     color: inherit;
 
     font-size: 14px;
+}
+
+/* Estilização dos itens Desktop */ 
+
+.desktop-items {
+    height: 100%;
+    width: 100%;
+    padding-right: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    .link-header {
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .item-header {
+        height: 100%;
+        text-align: center;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        margin-top: -5px;
+    }
 }
