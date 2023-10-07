@@ -26,7 +26,7 @@ export default function Home() {
       <main className="main-page">
         <div className="container-title">
           <h1 className="main-title">
-            Seu texto aqui como home, chamada para o canal
+            O História e Fé Católica é um verdadeiro Apostolado para o Reino de Maria.
           </h1>
         </div>
         <div className="container-video">
@@ -56,10 +56,13 @@ export default function Home() {
           </div>
           <div className="description-whoAmI">
             <p className="paragraph-whoAmI">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
-              quis quos, praesentium nihil voluptatem ex. Maiores totam ipsam ut
-              alias omnis reprehenderit, dolore doloremque voluptas eveniet
-              tempora velit suscipit praesentium.
+              Salve Maria! Natural de Ijuí no Rio Grande do Sul, Nasci em uma família católica não praticante e passei 
+              a maior parte da adolescência nas trevas do ateísmo, até me converter definitivamente em 2016, realizando a minha consagração à Nossa Senhora no ano seguinte.
+            </p>
+            <p className="paragraph-whoAmI">
+              Desde então, a maior preocupação da minha vida é servir à Santíssima Virgem da melhor forma possível – e a razão de ser do meu
+              canal é levar esta luz a todos que se encontram nas trevas do paganismo e da Revolução.
+              Sou católico contrarrevolucionário, de direita, monarquista, defensor da propriedade privada e do capitalismo orgânico.
             </p>
           </div>
         </div>
@@ -75,6 +78,7 @@ export default function Home() {
               das despesas básicas.
             </p>
             <p className="paragraph-endorse">
+              Sou formado em Direito pela Unijuí, mas optei por não seguir a carreira jurídica porque assim posso me dedicar inteiramente ao apostolado.
               Uma doação mensal, ainda que com valores baixos que não impactam
               em sua vida financeira, fará TODA a diferença para mim. Assim,
               poderei continuar a me dedicar em tempo integral ao Apostolado.

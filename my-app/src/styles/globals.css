@@ -28,11 +28,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 
-body {
-	line-height: 1;
-    width: 100vw;
-    overflow-x: hidden;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -65,9 +61,26 @@ a:visited {
     --branco-bg: rgb(240,243,245);
 }
 
+html {
+    width: 100vw;
+}
+
 body {
     background-color: var(--azul-bg);
+    line-height: 1;
+    width: 100%;
+    overflow-x: hidden;    
 }
+
+body::-webkit-scrollbar {
+    width: 1px; /* Ajuste a largura da barra de rolagem conforme necessário */
+    background-color: transparent; /* Define a cor de fundo da barra de rolagem como transparente */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Define a cor do polegar da barra de rolagem como transparente */
+}
+
 
 
 
