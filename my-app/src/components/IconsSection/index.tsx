@@ -31,7 +31,7 @@ const IconsSection = () => {
       </div>
       <div className="link-box">
         <Link
-          href={"https://t.me/Historiaefecatolica"}
+          href={"https://t.me/lorenzo_lazzarotto2"}
           target="_blank"
           className="link-box"
         > 

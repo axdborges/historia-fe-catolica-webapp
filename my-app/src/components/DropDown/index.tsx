@@ -17,7 +17,7 @@ import "./styles.css";
 
 const DropdownMenu = () => {
   const isMobile = useMediaQuery("(max-width: 767px)");
-  
+
   return (
     <div className="menu">
       {isMobile[0] ? (
@@ -35,7 +35,8 @@ const DropdownMenu = () => {
               <Link href={`#apostolado`}>Apoie este apostolado</Link>
             </MenuItem>
             <MenuItem height={"20%"} width={180}>
-              Meu Livro - EM BREVE
+              <Link href="/livro-HFC" 
+              prefetch={false}>Meu Livro - EM BREVE</Link>
             </MenuItem>
             <MenuItem height={"20%"} width={180}>
               <Link href={`#redes`}>Redes sociais</Link>
@@ -47,8 +48,11 @@ const DropdownMenu = () => {
           <Link href={`#apostolado`} className="link-header">
             <p className="item-header">Apoie este apostolado</p>
           </Link>
-          <Link href={`#apostolado`} className="link-header">
-            <p className="item-header">Meu Livro - (EM BREVE)</p>
+          <Link href="/livro-HFC" className="link-header"
+          prefetch={false}>
+            <p className="item-header">
+              Meu Livro - EM BREVE
+            </p>
           </Link>
           <Link href={`#redes`} className="link-header">
             <p className="item-header">Redes Sociais</p>

@@ -13,69 +13,84 @@
     border-radius: 20px;
 
     background-color: var(--azul-claro-bg);
+}
 
-    .link-box {
+.link-box {
 
-        width: 95%;
-        height: 50px;
-        /* background-color: red; */
+    width: 95%;
+    height: 50px;
+    /* background-color: red; */
 
-        display: flex;
-        align-items: center;
-        gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
-        .link-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 100%;
+    text-decoration: none;
+    color: white;
 
-            
-            color: white;
+}
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
+.link-box:visited {
+    text-decoration: none;
+    color: white;
+}
 
-            .svg {
-                width: 70%;
-                height: 70%;
-                
-            }
-        }
+.link-box:hover {
+    text-decoration: none;
+    color: white;
+}
 
 
 
-        .youtube-link {
-            background-color: var(--vermelho-claro);
-        }
-        .youtube-link:hover {
-            background-color: white;
-            color: var(--vermelho-claro);
-            box-shadow: inset 0 0 0 2px var(--vermelho-claro);
-        }
+.link-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
 
-        .telegram-link {
-            background-color: #0088cc;
-        }
-        .telegram-link:hover {
-            background-color: white;
-            color: #0088cc;
-            box-shadow: inset 0 0 0 2px #0088cc;
-        }
+    
+    color: white;
 
-        .instagram-link {
-            background-color: rgb(225, 48, 108);
-        }
-        .instagram-link:hover {
-            background-color: white;
-            color: rgb(225, 48, 108);
-            box-shadow: inset 0 0 0 2px rgb(225, 48, 108);
-        }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .link-label {
-            height: 20px;
-        }
-    }
+.svg {
+    width: 70%;
+    height: 70%;
+    
+}
 
+.youtube-link {
+    background-color: var(--vermelho-claro);
+}
+
+.youtube-link:hover {
+    background-color: white;
+    color: var(--vermelho-claro);
+    box-shadow: inset 0 0 0 2px var(--vermelho-claro);
+}
+
+.telegram-link {
+    background-color: #0088cc;
+}
+
+.telegram-link:hover {
+    background-color: white;
+    color: #0088cc;
+    box-shadow: inset 0 0 0 2px #0088cc;
+}
+
+.instagram-link {
+    background-color: rgb(225, 48, 108);
+}
+
+.instagram-link:hover {
+    background-color: white;
+    color: rgb(225, 48, 108);
+    box-shadow: inset 0 0 0 2px rgb(225, 48, 108);
+}
+
+.link-label {
+    height: 20px;
 }

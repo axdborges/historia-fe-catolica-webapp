@@ -26,7 +26,7 @@ export default function Home() {
       <main className="main-page">
         <div className="container-title">
           <h1 className="main-title">
-            O História e Fé Católica é um verdadeiro Apostolado para o Reino de Maria.
+            Oração e estudo pelo triunfo do Imaculado Coração de Maria.
           </h1>
         </div>
         <div className="container-video">
@@ -56,13 +56,14 @@ export default function Home() {
           </div>
           <div className="description-whoAmI">
             <p className="paragraph-whoAmI">
-              Salve Maria! Natural de Ijuí no Rio Grande do Sul, Nasci em uma família católica não praticante e passei 
-              a maior parte da adolescência nas trevas do ateísmo, até me converter definitivamente em 2016, realizando a minha consagração à Nossa Senhora no ano seguinte.
+              Natural de Ijuí no Rio Grande do Sul, nasci em um lar católico não praticante e passei a maior parte da 
+              adolescência nas trevas do ateísmo, até me converter definitivamente em 2016, 
+              realizando a minha consagração à Nossa Senhora no ano seguinte.
             </p>
             <p className="paragraph-whoAmI">
-              Desde então, a maior preocupação da minha vida é servir à Santíssima Virgem da melhor forma possível – e a razão de ser do meu
-              canal é levar esta luz a todos que se encontram nas trevas do paganismo e da Revolução.
-              Sou católico contrarrevolucionário, de direita, monarquista, defensor da propriedade privada e do capitalismo orgânico.
+              Desde então, a maior preocupação da minha vida é servir à Santíssima Virgem da melhor forma possível.
+              Esta é a razão de ser do meu canal, que existe para fim de levar a luz da Fé a todos que se encontram nas
+              trevas do paganismo e da apostasia, proporcionando uma sólida formação Católica e Contra-revolucionária.
             </p>
           </div>
         </div>
@@ -77,7 +78,7 @@ export default function Home() {
               2023 tenho que arcar com o financiamento da minha faculdade junto
               das despesas básicas.
             </p>
-            <p className="paragraph-endorse">
+            <p className="paragraph-endorse" id="big-paragraph">
               Sou formado em Direito pela Unijuí, mas optei por não seguir a carreira jurídica porque assim posso me dedicar inteiramente ao apostolado.
               Uma doação mensal, ainda que com valores baixos que não impactam
               em sua vida financeira, fará TODA a diferença para mim. Assim,

@@ -53,7 +53,7 @@
 
 .link-item {
     text-decoration: none;
-    color: inherit;
+    color: black;
 
     font-size: 14px;
 }
@@ -81,6 +81,19 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+
+    text-decoration: none;
+    color: black;
+}
+
+.link-header:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.link-header:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .item-header {
