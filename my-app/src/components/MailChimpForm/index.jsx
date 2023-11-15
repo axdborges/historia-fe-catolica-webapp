@@ -33,29 +33,42 @@ export const MailChimpForm = () => {
 
   return (
     <>
-      <div id="mc_embed_shell" class="flex justify-center items-center" style={{height: "500px", }}>
+      <div id="mc_embed_shell" class="flex justify-center items-center  bg-purple-600" style={{height: "600px", backgroundColor: "white"}}>
         {/* <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css"/> */}
-        <div id="mc_embed_signup" class="validate bg-purple-600" >
+        <h2>Inscreva-se abaixo para participar gratuitamente do “Como Ser Santo em Um Mundo Anticristão”</h2>
+        <div id="mc_embed_signup" 
+        class="validate flex justify-center items-center rounded-lg" 
+        style={{height: "400px", width: "90%"}}>
           <form action="https://gmail.us10.list-manage.com/subscribe/post?u=e0e70bed9f36aa0a7222e7e44&amp;id=81f8815806&amp;f_id=00bfeee5f0" 
             method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"  target="_blank" 
-            class="validate bg-red-600"
-            style={{height: "90%"}}>
-            <div id="mc_embed_signup_scroll">
-              <h2>Inscreva-se abaixo para participar gratuitamente do “Como Ser Santo em Um Mundo Anticristão”</h2>
+            class="validate"
+            style={{height: "100%", width: "100%", padding: "10px", backgroundColor: "var(--branco-bg)"}}>
+            <div id="mc_embed_signup_scroll" 
+              class=""
+              style={{height: "100%"}}>
               <div class="indicates-required grid justify-items-end ">
-                <span class="asterisk ">* Campos Obrigatórios</span> 
+                <span class="asterisk " style={{color: "red" }}>* Campos Obrigatórios</span> 
               </div>
-              <div class="mc-field-group">
-                <label for="mce-EMAIL">Endereço de e-mail <span class="asterisk">*</span></label>
-                <input type="email" name="EMAIL" class="required email" id="m'ce-EMAIL" required="" 
-                // value=""
-                value={emailInputValue} onChange={handleChangeEmail}
+              <div class="mc-field-group flex-col justify-around items-center " 
+                style={{width: "100%", height: "80px"}}>
+                <label for="mce-EMAIL">Endereço de e-mail <span class="asterisk" style={{color: "red"}}>*</span></label>
+                <input type="email" name="EMAIL" 
+                  id="m'ce-EMAIL" required="" 
+                  // value=""
+                  value={emailInputValue} onChange={handleChangeEmail}
+                  class="required email rounded" 
+                  style={{width: "90%", height: "30px", padding: "1px", paddingLeft: "6px"}}
                 />
               </div>
-              <div class="mc-field-group"><label for="mce-FNAME">Nome e Sobrenome <span class="asterisk">*</span></label>
-                <input type="text" name="FNAME" class="required text" id="mce-FNAME" required="" 
-                // value=""
-                value={nameInputValue} onChange={handleChangeName}
+              <div class="mc-field-group flex-col justify-around items-center "
+                style={{width: "100%", height: "80px"}}>
+                <label for="mce-FNAME">Nome e Sobrenome <span class="asterisk" style={{color: "red" }}>*</span></label>
+                <input type="text" name="FNAME" 
+                  id="mce-FNAME" required="" 
+                  // value=""
+                  value={nameInputValue} onChange={handleChangeName}
+                  class="required text rounded" 
+                  style={{width: "90%", height: "30px", padding: "1px", paddingLeft: "6px"}}
                 />
               </div>
               <div id="mce-responses" class="clear foot">
@@ -66,20 +79,24 @@ export const MailChimpForm = () => {
               {/* /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
               <input type="text" name="b_e0e70bed9f36aa0a7222e7e44_81f8815806" tabindex="-1" value=""/>
             </div>
-              <div class="optionalParent">
-                <div class="clear foot">
-                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button bg-red-600" value="Fazer Inscrição"
-                    style={{width: "100px", height: "50px", }} onChange={() => console.log("Click")}
+              <div class="optionalParent ">
+                <div class="clear foot ">
+                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" 
+                    class="button rounded-md" 
+                    style={{width: "90%", height: "40px", backgroundColor: "var(--dourado-claro)", fontWeight: "bold"}} 
+                    value="Fazer Inscrição"
+                    onChange={() => console.log("Click")}
                   />
                   <p style={{margin: "0px auto"}}>
                     <a href="http://eepurl.com/iy9aHc" title="Mailchimp - marketing por e-mail fácil e divertido">
                       <span style={{display: "inline-block", backgroundColor: "transparent", borderRadius: "4px"}}>
                         <img class="refferal_badge" 
-                        width={0}
-                        height={0}
-                        src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" 
-                        alt="Intuit Mailchimp" 
-                        style={{width: "220px", height: "40px", display: "flex", padding: "2px 0px", justifyContent: "center", alignItems: "center" }}/>
+                          width={0}
+                          height={0}
+                          src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" 
+                          alt="Intuit Mailchimp" 
+                          style={{width: "220px", height: "40px", display: "flex", padding: "2px 0px", justifyContent: "center", alignItems: "center" }}
+                        />
                       </span>
                     </a>
                   </p>
