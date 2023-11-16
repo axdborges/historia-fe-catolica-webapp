@@ -1,6 +1,3 @@
-/* * {
-    overflow-x: hidden;
-} */
 
 * {
     overflow-x: hidden;
@@ -50,8 +47,6 @@
     font-size: 16px;
     min-width: 230px;
     margin-left: 8px;
-
-    
 }
 
 .header-title {
@@ -80,14 +75,34 @@
     color: white;
 }
 
+.main-page-book {
+    width: 100%;
+    height: 220px;
+    padding: 10px 0px;
+    background-image: url(../../public/revolucao.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* padding-top: 100px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    color: white;
+}
+
 @media screen and (min-width: 768px) {
-    .main-page {
+    .main-page-book {
         height: 680px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;  
     }
+
+
 }
 
 .container-title {
@@ -100,9 +115,20 @@
     justify-content: center;
 
     /* padding-top: 80px; */
-
-
 }
+
+.container-title-book {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
 .main-title {
     /* position: relative; */
     /* bottom: -100px; */
@@ -119,6 +145,12 @@
     justify-content: center;
     
 } 
+
+.second-title {
+    font-size: 18px;
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.36);
+    text-align: center;
+}
 
 @media screen and (max-width: 365px) { 
     .main-page {
@@ -172,7 +204,97 @@
         width: 700px;
         height: 400px;
     }
+} 
+
+.container-cta {
+    background-color: var(--azul-bg);
+    border-color: var(--azul-bg);
+    color: white;
+
+    padding: 10px;
 }
+
+.third-title {
+    font-size: 14px;
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.36);
+    text-align: center;
+
+    line-height: 18px;
+}
+
+/* Seção ícones da página do livro */
+
+.section-icons {
+    height: 320px;
+    width: 100%;
+
+    /* color: white; */
+    background-color: var(--branco-bg);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 20px; */
+
+    margin: auto;
+    width: 80%;
+    max-width: 800px;
+    height: 200px;
+    /* max-height: 100%; */
+    padding: 10px;
+    border-radius: 20px;
+
+    background-color: white;
+}
+
+.icon-box {
+    width: 95%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    text-decoration: none;
+    color: white;
+} 
+
+.icon-point {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg-icon {
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
+}
+
+.icon-label {
+    height: 40px;
+    color: black;
+    text-align: center;
+    font-size: 13px;
+    
+    display: flex;
+    align-items: center;
+} 
+
+/* Seções seguintes da página do livro estão no final do arquivo */
 
 /* Seção Quem sou eu */
 
@@ -472,4 +594,51 @@
     .footer-home {
         height: 40px;
     }
+}
+
+.section-list {
+    height: 400px;
+    width: 100%;
+
+    color: white;
+    /* background-color: var(--branco-bg); */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+
+    margin: auto;
+    width: 80%;
+    max-width: 800px;
+    height: 85%;
+    /* max-height: 100%; */
+    padding: 10px;
+    border-radius: 20px;
+
+    background-color: var(--azul-claro-bg);
+}
+
+.item-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-date {
+    font-style: italic;
+    font-size: 13px;
+}
+
+.item-label {
+    font-size: 15px;
+    line-height: 16px;
 }

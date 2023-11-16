@@ -33,56 +33,55 @@ export const MailChimpForm = () => {
 
   return (
     <>
-      <div id="mc_embed_shell" class="flex justify-center items-center  bg-purple-600" style={{height: "600px", backgroundColor: "white"}}>
+      <div id="mc_embed_shell" className="flex justify-center items-center" style={{height: "460px", backgroundColor: "var(--azul-bg)"}}>
         {/* <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css"/> */}
-        <h2>Inscreva-se abaixo para participar gratuitamente do “Como Ser Santo em Um Mundo Anticristão”</h2>
         <div id="mc_embed_signup" 
-        class="validate flex justify-center items-center rounded-lg" 
+        className="validate flex justify-center items-center rounded-lg" 
         style={{height: "400px", width: "90%"}}>
           <form action="https://gmail.us10.list-manage.com/subscribe/post?u=e0e70bed9f36aa0a7222e7e44&amp;id=81f8815806&amp;f_id=00bfeee5f0" 
             method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"  target="_blank" 
-            class="validate"
+            className="validate"
             style={{height: "100%", width: "100%", padding: "10px", backgroundColor: "var(--branco-bg)"}}>
             <div id="mc_embed_signup_scroll" 
-              class=""
+              className=""
               style={{height: "100%"}}>
-              <div class="indicates-required grid justify-items-end ">
-                <span class="asterisk " style={{color: "red" }}>* Campos Obrigatórios</span> 
+              <div className="indicates-required grid justify-items-end ">
+                <span className="asterisk " style={{color: "red" }}>* Campos Obrigatórios</span> 
               </div>
-              <div class="mc-field-group flex-col justify-around items-center " 
+              <div className="mc-field-group flex-col justify-around items-center " 
                 style={{width: "100%", height: "80px"}}>
-                <label for="mce-EMAIL">Endereço de e-mail <span class="asterisk" style={{color: "red"}}>*</span></label>
+                <label for="mce-EMAIL">Endereço de e-mail <span className="asterisk" style={{color: "red"}}>*</span></label>
                 <input type="email" name="EMAIL" 
                   id="m'ce-EMAIL" required="" 
                   // value=""
                   value={emailInputValue} onChange={handleChangeEmail}
-                  class="required email rounded" 
+                  className="required email rounded" 
                   style={{width: "90%", height: "30px", padding: "1px", paddingLeft: "6px"}}
                 />
               </div>
-              <div class="mc-field-group flex-col justify-around items-center "
+              <div className="mc-field-group flex-col justify-around items-center "
                 style={{width: "100%", height: "80px"}}>
-                <label for="mce-FNAME">Nome e Sobrenome <span class="asterisk" style={{color: "red" }}>*</span></label>
+                <label for="mce-FNAME">Nome e Sobrenome <span className="asterisk" style={{color: "red" }}>*</span></label>
                 <input type="text" name="FNAME" 
                   id="mce-FNAME" required="" 
                   // value=""
                   value={nameInputValue} onChange={handleChangeName}
-                  class="required text rounded" 
+                  className="required text rounded" 
                   style={{width: "90%", height: "30px", padding: "1px", paddingLeft: "6px"}}
                 />
               </div>
-              <div id="mce-responses" class="clear foot">
-              <div class="response" id="mce-error-response" style={{display: "none"}}></div>
-              <div class="response" id="mce-success-response" style={{display: "none"}}></div>
+              <div id="mce-responses" className="clear foot">
+              <div className="response" id="mce-error-response" style={{display: "none"}}></div>
+              <div className="response" id="mce-success-response" style={{display: "none"}}></div>
             </div>
             <div aria-hidden="true" style={{position: "absolute", left: "-5000px"}}>
               {/* /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
               <input type="text" name="b_e0e70bed9f36aa0a7222e7e44_81f8815806" tabindex="-1" value=""/>
             </div>
-              <div class="optionalParent ">
-                <div class="clear foot ">
+              <div className="optionalParent ">
+                <div className="clear foot ">
                   <input type="submit" name="subscribe" id="mc-embedded-subscribe" 
-                    class="button rounded-md" 
+                    className="button rounded-md" 
                     style={{width: "90%", height: "40px", backgroundColor: "var(--dourado-claro)", fontWeight: "bold"}} 
                     value="Fazer Inscrição"
                     onChange={() => console.log("Click")}
@@ -90,7 +89,7 @@ export const MailChimpForm = () => {
                   <p style={{margin: "0px auto"}}>
                     <a href="http://eepurl.com/iy9aHc" title="Mailchimp - marketing por e-mail fácil e divertido">
                       <span style={{display: "inline-block", backgroundColor: "transparent", borderRadius: "4px"}}>
-                        <img class="refferal_badge" 
+                        <img className="refferal_badge" 
                           width={0}
                           height={0}
                           src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" 
