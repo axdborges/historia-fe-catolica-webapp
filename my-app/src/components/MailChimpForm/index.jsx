@@ -1,39 +1,50 @@
 "use client"
-import React from 'react';
+// import React from 'react';
 import { useState } from 'react';
 import Image from 'next/image';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 import "./styles.css"
 
 export const MailChimpForm = () => {
-  // const inputEmail = document.getElementById("m'ce-EMAIL")
-  // console.log(inputEmail.value)
-  // const [email, setEmail] = useState("");
-
+  // const router = useRouter();
+  const [tempoDecorrido, setTempoDecorrido] = useState(0);
+  const [clicou, setclicou] = useState(false);
   const [emailInputValue, setEmailInputValue] = useState('');
   const [nameInputValue, setNameInputValue] = useState('');
-
+  
   const handleChangeEmail = (e) => {
-    console.log(e.target.value)
     setEmailInputValue(e.target.value);
-    console.log('Valor do input:', emailInputValue);
   };
-
+  
   const handleChangeName = (e) => {
-    console.log(e.target.value)
     setNameInputValue(e.target.value);
-    console.log('Valor do input:', nameInputValue);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Faça algo com o valor, por exemplo, envie para o servidor
-    console.log('Valor do input:', emailInputValue);
+  const redirectToUrl = (url, tempo) => {
+    setTimeout(() => {
+      window.location.href = url;
+    }, tempo);
   };
+  
+    useEffect(() => {
+      
+      console.log(clicou)
+      if(clicou === true) {
+        setTimeout(() => {
+          // Redirecionar para a rota desejada após 3 segundos
+          redirectToUrl("/obrigado-por-se-inscrever");
+        }, 4000);
+      }
+
+      // Limpar o timeout ao desmontar o componente
+      // return () => clearTimeout(timeoutId);
+    }, [ clicou]);
 
   return (
     <>
-      <div id="mc_embed_shell" className="flex justify-center items-center" style={{height: "460px", backgroundColor: "var(--azul-bg)"}}>
+      <div id="mc_embed_shell" className="flex justify-center items-center" style={{height: "430px", backgroundColor: "var(--azul-bg)"}}>
         {/* <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css"/> */}
         <div id="mc_embed_signup" 
         className="validate flex justify-center items-center rounded-lg" 
@@ -68,6 +79,8 @@ export const MailChimpForm = () => {
                   value={nameInputValue} onChange={handleChangeName}
                   className="required text rounded" 
                   style={{width: "90%", height: "30px", padding: "1px", paddingLeft: "6px"}}
+                  onFocus=
+                  {() => {console.log("clicou")}}
                 />
               </div>
               <div id="mce-responses" className="clear foot">
@@ -84,7 +97,7 @@ export const MailChimpForm = () => {
                     className="button rounded-md" 
                     style={{width: "90%", height: "40px", backgroundColor: "var(--dourado-claro)", fontWeight: "bold"}} 
                     value="Fazer Inscrição"
-                    onChange={() => console.log("Click")}
+                    onClick={() => setclicou(true)}
                   />
                   <p style={{margin: "0px auto"}}>
                     <a href="http://eepurl.com/iy9aHc" title="Mailchimp - marketing por e-mail fácil e divertido">

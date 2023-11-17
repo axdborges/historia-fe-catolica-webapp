@@ -94,7 +94,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .main-page-book {
+    .main-page {
         height: 680px;
         display: flex;
         flex-direction: column;
@@ -102,7 +102,9 @@
         justify-content: space-evenly;  
     }
 
-
+    .main-page-book {
+        height: 300px;
+    }
 }
 
 .container-title {
@@ -144,7 +146,11 @@
     align-items: center;
     justify-content: center;
     
-} 
+}  
+
+.title-amarelo {
+    color: var(--dourado-claro);
+}
 
 .second-title {
     font-size: 18px;
@@ -211,7 +217,7 @@
     border-color: var(--azul-bg);
     color: white;
 
-    padding: 10px;
+    padding: 8px;
 }
 
 .third-title {
@@ -219,7 +225,30 @@
     text-shadow: 2px 3px 5px rgba(0,0,0,0.36);
     text-align: center;
 
-    line-height: 18px;
+    line-height: 22px;
+}
+
+@media screen and (min-width: 768px) { 
+    .title-amarelo {
+        width: 60%;
+        max-height: 100px;
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .second-title {
+        font-size: 30px;
+    }
+
+    .container-cta {
+        display: flex;
+        justify-content: center;
+    }
+
+    .third-title {
+        font-size: 18px;
+        width: 40%;
+    }
 }
 
 /* Seção ícones da página do livro */
@@ -246,7 +275,7 @@
     margin: auto;
     width: 80%;
     max-width: 800px;
-    height: 200px;
+    height: 85%;
     /* max-height: 100%; */
     padding: 10px;
     border-radius: 20px;
@@ -641,4 +670,86 @@
 .item-label {
     font-size: 15px;
     line-height: 16px;
+} 
+
+/* Página de Obrigado */
+
+.main-thanks {
+    background-color: var(--azul-bg);
+    padding: 10px;
+    height: 400px;
+} 
+.container-title-wpp{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.title-wpp {
+    color: var(--dourado-claro);
+}
+
+.second-title-wpp {
+    font-size: 18px;
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.36);
+    text-align: center;
+    color: white;
+    line-height: 24px;
+}
+
+.button-wpp {
+    width: 250px;
+    height: 60px;
+    padding: 1px;
+    padding-left: 20px;
+    background-color: #25D366;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+
+}
+.button-wpp:hover {
+    background-color: #06ef5c;
+}
+.button-wpp {
+    text-decoration: none;
+}
+.button-wpp:visited {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.text-wpp {
+    color: white;
+}
+
+.svg-wpp {
+    width: 26px;
+    height: 26px;
+    color: white;
+}
+
+@media screen and (min-width: 768px) { 
+
+    .title-wpp {
+        width: 50%;
+        height: 100px;
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+    .second-title-wpp {
+        font-size: 22px;
+        width: 50%;
+        line-height: 30px;
+    }
+
 }

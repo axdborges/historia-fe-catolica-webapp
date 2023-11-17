@@ -16,7 +16,7 @@ export default function BookPage() {
     <>
       <main className="main-page-book">
         <div className="container-title-book">
-          <h1 className="main-title">
+          <h1 className="main-title title-amarelo">
             Descubra como a Revolução se tornou o ar que você respira
           </h1>
           <h2 className="second-title">
@@ -28,6 +28,7 @@ export default function BookPage() {
         <div className="container-cta">
           <h2 className="third-title">
             Inscreva-se abaixo para participar gratuitamente do 
+            <br/>
             “Como Ser Santo em Um Mundo Anticristão”
           </h2>
         </div>
@@ -63,11 +64,10 @@ export default function BookPage() {
         </div>
       </section>
       <section className="section-list">
-        {/* <IconsSection/> */}
         <ul className="container-list">
           <div className="item-box">
             <p className="item-date">
-              Dia 28/11
+              Dia 05/12
             </p>
             <li className="item-label">
               Aula 1 - O que é a Revolução
@@ -75,7 +75,7 @@ export default function BookPage() {
           </div>
           <div className="item-box">
             <p className="item-date">
-              Dia 29/11
+              Dia 06/12
             </p>
             <li className="item-label">
               Aula 2 - A Civilização Cristã desapareceu para sempre?
@@ -83,11 +83,16 @@ export default function BookPage() {
           </div>
           <div className="item-box">
             <p className="item-date">
-              Dia 30/11
+              Dia 07/12
             </p>
             <li className="item-label">
               Aula 3 - Eles alcançaram a santidade em um mundo anticristão!
-              e lançamento da campanha do livro História e Fé Católica
+              e 
+              <span style={{color: "var(--dourado-claro)"}}>
+                {" "} 
+                lançamento da campanha do livro 
+                História e Fé Católica
+              </span>
             </li>
           </div>
         </ul>
