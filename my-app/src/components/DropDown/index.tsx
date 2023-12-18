@@ -30,16 +30,20 @@ const DropdownMenu = () => {
             height={40}
             border={"none"}
           />
-          <MenuList height={200}>
+          <MenuList height={200} className="menu-itens">
             <MenuItem height={"20%"} width={180}>
-              <Link href={`#apostolado`}>Apoie este apostolado</Link>
+              <Link href={`#apostolado`}
+                className="link-item"
+              >Apoie este apostolado</Link>
             </MenuItem>
             <MenuItem height={"20%"} width={180}>
-              <Link href="/livro-HFC" 
-              prefetch={false}>Meu Livro - EM BREVE</Link>
+              <Link href="/livro-HFC/lancamento"  className="link-item"
+              prefetch={false}>Meu Livro</Link>
             </MenuItem>
             <MenuItem height={"20%"} width={180}>
-              <Link href={`#redes`}>Redes sociais</Link>
+              <Link href={`#redes`} 
+                className="link-item">
+                  Redes sociais</Link>
             </MenuItem>
           </MenuList>
         </Menu>
@@ -48,10 +52,10 @@ const DropdownMenu = () => {
           <Link href={`#apostolado`} className="link-header">
             <p className="item-header">Apoie este apostolado</p>
           </Link>
-          <Link href="/livro-HFC" className="link-header"
+          <Link href="/livro-HFC/lancamento" className="link-header"
           prefetch={false}>
             <p className="item-header">
-              Meu Livro - EM BREVE
+              Meu Livro
             </p>
           </Link>
           <Link href={`#redes`} className="link-header">

@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 
 import "./styles.css"
 
-export const MailChimpForm = () => {
+export const  MailChimpForm = () => {
   // const router = useRouter();
   const [tempoDecorrido, setTempoDecorrido] = useState(0);
   const [clicou, setclicou] = useState(false);

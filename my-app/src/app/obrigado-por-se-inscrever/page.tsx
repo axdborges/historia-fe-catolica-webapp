@@ -19,7 +19,7 @@ export default function ThanksPage() {
           </h2>
           <Link className="button-wpp" href="https://chat.whatsapp.com/DnNEvnX5SNODOwzCjuvUml">
             <FaWhatsapp className="svg-wpp" />
-            <p className="text-wpp">Whatsapp</p>
+            <p className="text-wpp">Entrar no Grupo</p>
           </Link>
         </div>
       </main>
